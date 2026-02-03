@@ -1,0 +1,242 @@
+.skills {
+    background: var(--bg-primary);
+    position: relative;
+}
+
+.skills::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--cyber-purple), transparent);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.skill-category {
+    background: var(--bg-card);
+    border: 1px solid rgba(0, 255, 65, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all var(--transition-medium);
+}
+
+.skill-category:hover {
+    border-color: rgba(0, 255, 65, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.category-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 255, 65, 0.1);
+    border-radius: 8px;
+}
+
+.category-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--cyber-green);
+}
+
+.category-header h3 {
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-tag {
+    padding: 0.375rem 0.75rem;
+    background: var(--bg-tertiary);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+}
+
+.skill-tag:hover {
+    background: rgba(0, 255, 65, 0.1);
+    border-color: rgba(0, 255, 65, 0.3);
+    color: var(--cyber-green);
+}
+
+/* Leadership Section */
+.leadership-section {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    border-top: 1px solid rgba(0, 255, 65, 0.1);
+}
+
+.leadership-section .section-header {
+    margin-bottom: 2.5rem;
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.leadership-card {
+    background: linear-gradient(135deg, rgba(18, 18, 26, 0.95), rgba(10, 10, 15, 0.98));
+    border: 1px solid rgba(0, 255, 65, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    transition: all var(--transition-medium);
+}
+
+.leadership-card:hover {
+    border-color: rgba(0, 255, 65, 0.3);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 255, 65, 0.1);
+}
+
+.leadership-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 255, 65, 0.1);
+    border-radius: 12px;
+}
+
+.leadership-icon svg {
+    width: 32px;
+    height: 32px;
+    stroke: var(--cyber-green);
+}
+
+.leadership-card:nth-child(2) .leadership-icon {
+    background: rgba(0, 212, 255, 0.1);
+}
+
+.leadership-card:nth-child(2) .leadership-icon svg {
+    stroke: var(--cyber-blue);
+}
+
+.leadership-card:nth-child(3) .leadership-icon {
+    background: rgba(179, 71, 255, 0.1);
+}
+
+.leadership-card:nth-child(3) .leadership-icon svg {
+    stroke: var(--cyber-purple);
+}
+
+.leadership-card:nth-child(4) .leadership-icon {
+    background: rgba(255, 51, 102, 0.1);
+}
+
+.leadership-card:nth-child(4) .leadership-icon svg {
+    stroke: var(--cyber-red);
+}
+
+.leadership-card h3 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.leadership-org {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--cyber-green);
+    margin-bottom: 0.25rem;
+}
+
+.leadership-card:nth-child(2) .leadership-org {
+    color: var(--cyber-blue);
+}
+
+.leadership-card:nth-child(3) .leadership-org {
+    color: var(--cyber-purple);
+}
+
+.leadership-card:nth-child(4) .leadership-org {
+    color: var(--cyber-red);
+}
+
+.leadership-period {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.leadership-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.leadership-card:nth-child(2) {
+    border-color: rgba(0, 212, 255, 0.1);
+}
+
+.leadership-card:nth-child(2):hover {
+    border-color: rgba(0, 212, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 212, 255, 0.1);
+}
+
+.leadership-card:nth-child(3) {
+    border-color: rgba(179, 71, 255, 0.1);
+}
+
+.leadership-card:nth-child(3):hover {
+    border-color: rgba(179, 71, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(179, 71, 255, 0.1);
+}
+
+.leadership-card:nth-child(4) {
+    border-color: rgba(255, 51, 102, 0.1);
+}
+
+.leadership-card:nth-child(4):hover {
+    border-color: rgba(255, 51, 102, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 51, 102, 0.1);
+}
+
+@media (max-width: 1200px) {
+    .leadership-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .leadership-grid {
+        grid-template-columns: 1fr;
+    }
+}
