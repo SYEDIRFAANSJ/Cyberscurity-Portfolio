@@ -194,6 +194,26 @@
     }
 }
 
+@media (max-width: 480px) {
+    .contact-form-wrapper {
+        padding: 1.5rem;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1.25rem;
+    }
+
+    .contact-decorations {
+        margin-top: 2rem;
+    }
+}
+
 /* Form Status Messages */
 .form-status {
     padding: 1rem;
