@@ -7,7 +7,8 @@ const Experience = () => {
             company: 'DigiAlert',
             period: 'July 2025 - September 2025',
             description: 'Conducted web application and network penetration testing using Burp Suite, Nmap, and Postman. Assisted in red team assessments, vulnerability analysis, and remediation validation. Developed Google Workspace security monitoring solution.',
-            type: 'work'
+            type: 'work',
+            link: 'https://www.linkedin.com/posts/syedirfaan_internshipcompletion-cybersecurity-ctf-activity-7373793809111072768-E2vA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEeSUkcBEWjINflXPMC2fCmz5GePIcLIrMA'
         },
         {
             title: 'Cyber Security Specialist Intern',
@@ -50,7 +51,13 @@ const Experience = () => {
                             </div>
                             <div className="timeline-content">
                                 <div className="timeline-header">
-                                    <h3>{exp.title}</h3>
+                                    {exp.link ? (
+                                        <a href={exp.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                            <h3 style={{ cursor: 'pointer', transition: 'color 0.3s' }} onMouseEnter={(e) => e.target.style.color = 'var(--cyber-green)'} onMouseLeave={(e) => e.target.style.color = 'inherit'}>{exp.title}</h3>
+                                        </a>
+                                    ) : (
+                                        <h3>{exp.title}</h3>
+                                    )}
                                     <span className="timeline-period">{exp.period}</span>
                                 </div>
                                 <span className="timeline-company">{exp.company}</span>

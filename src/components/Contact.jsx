@@ -76,7 +76,7 @@ const Contact = () => {
             ),
             label: 'GitHub',
             value: 'GitHub Profile',
-            link: 'https://github.com/syedirfaan'
+            link: 'https://github.com/SYEDIRFAANSJ'
         },
         {
             icon: (

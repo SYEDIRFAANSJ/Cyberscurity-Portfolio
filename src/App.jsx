@@ -52,8 +52,8 @@ function App() {
         <Experience />
         <Projects />
         <Skills />
-        <Blog />
         <Education />
+        <Blog />
         <Contact />
       </main>
       <Footer />

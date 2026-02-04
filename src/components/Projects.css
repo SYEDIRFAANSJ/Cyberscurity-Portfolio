@@ -46,6 +46,9 @@
     perspective: 1000px;
     flex: 1;
     min-width: 0;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
 }
 
 .project-card-inner {

@@ -14,7 +14,8 @@ const Projects = () => {
             ],
             icon: '🔐',
             color: 'green',
-            gradient: 'linear-gradient(135deg, #00ff41 0%, #00cc33 100%)'
+            gradient: 'linear-gradient(135deg, #00ff41 0%, #00cc33 100%)',
+            githubUrl: 'https://github.com/SYEDIRFAANSJ/AI-Integrated-Active-Directory-Security-Monitoring'
         },
         {
             title: 'Google Workspace Security Automation Tool',
@@ -28,7 +29,8 @@ const Projects = () => {
             ],
             icon: '☁️',
             color: 'blue',
-            gradient: 'linear-gradient(135deg, #00d4ff 0%, #0099cc 100%)'
+            gradient: 'linear-gradient(135deg, #00d4ff 0%, #0099cc 100%)',
+            githubUrl: 'https://github.com/SYEDIRFAANSJ/Google-Workspace-Security-Automation-Tool'
         },
         {
             title: 'Honeypot Integrated with SIEM',
@@ -42,7 +44,8 @@ const Projects = () => {
             ],
             icon: '🍯',
             color: 'purple',
-            gradient: 'linear-gradient(135deg, #b347ff 0%, #9333ea 100%)'
+            gradient: 'linear-gradient(135deg, #b347ff 0%, #9333ea 100%)',
+            githubUrl: 'https://github.com/SYEDIRFAANSJ/cc-honeypy'
         }
     ];
 
@@ -61,7 +64,14 @@ const Projects = () => {
 
                 <div className="projects-grid">
                     {projects.map((project, index) => (
-                        <div key={index} className={`project-card ${project.color}`}>
+                        <a
+                            key={index}
+                            href={project.githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`project-card ${project.color}`}
+                            style={{ textDecoration: 'none', color: 'inherit' }}
+                        >
                             <div className="project-card-inner">
                                 {/* Card Background Effects */}
                                 <div className="card-bg-pattern"></div>
@@ -113,7 +123,7 @@ const Projects = () => {
                                 <div className="card-corner bottom-left"></div>
                                 <div className="card-corner bottom-right"></div>
                             </div>
-                        </div>
+                        </a>
                     ))}
                 </div>
             </div>
